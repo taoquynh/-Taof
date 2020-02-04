@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/header" android:background="@color/toolbar" android:layout_width="0.0dip" android:layout_height="@dimen/toolbar_height" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_back" android:paddingLeft="12.0dip" android:paddingTop="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="12.0dip" android:layout_width="36.0dip" android:layout_height="wrap_content" android:scaleType="centerCrop" app:srcCompat="@drawable/ic_back" />
+        <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rick_media_post" style="@style/text_tool_bar_title" />
+        <TextView android:layout_gravity="right" android:id="@id/tv_send" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/send" style="@style/text_tool_bar_done" />
+    </FrameLayout>
+    <com.chinalwb.are.styles.toolbar.ARE_Toolbar android:id="@id/editor_toolbar" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/header" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_friends_tag" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/editor_toolbar" />
+    <androidx.core.widget.NestedScrollView android:id="@id/scroll_content" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/media_editor_bottom" app:layout_constraintTop_toBottomOf="@id/rv_friends_tag">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/fr_upload_image_video" android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="170.0dip">
+                <RelativeLayout android:id="@id/item_image_upload" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/iv_photo" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <ImageView android:id="@id/iv_remove" android:focusable="true" android:clickable="true" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_margin="8.0dip" android:adjustViewBounds="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_waste_bin" />
+                    <ImageView android:id="@id/iv_play" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_btn_play" />
+                </RelativeLayout>
+                <TextView android:textSize="15.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/tv_upload_image" android:background="@drawable/bg_upload_image" android:paddingLeft="14.0dip" android:paddingTop="8.0dip" android:paddingRight="14.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Upload Photo/Video" />
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="bottom|center" android:id="@id/tv_edit_media" android:background="@drawable/bg_edit_media" android:paddingLeft="@dimen/size_18" android:paddingTop="@dimen/size_8" android:paddingRight="@dimen/size_18" android:paddingBottom="@dimen/size_8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/size_30" android:text="Edit media" />
+                <TextView android:layout_gravity="bottom" android:id="@id/tv_break_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - -" android:maxLines="1" />
+            </FrameLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recy_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+            <FrameLayout android:id="@id/media_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip">
+                <include android:id="@id/item_textbox" android:visibility="gone" layout="@layout/item_text_box" />
+                <include android:id="@id/item_qoutes" android:visibility="gone" layout="@layout/item_rv_quote" />
+                <include android:id="@id/item_preview_link" android:visibility="gone" layout="@layout/item_rv_preview_link" />
+                <include android:id="@id/item_image" android:visibility="gone" layout="@layout/item_rv_images" />
+            </FrameLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <include android:id="@id/media_editor_bottom" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" layout="@layout/layout_media_editor_bottom" />
+</androidx.constraintlayout.widget.ConstraintLayout>

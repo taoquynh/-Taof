@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_action_comment_item_0" android:background="@drawable/bg_all_white_btn" android:layout_width="fill_parent" android:layout_height="@dimen/height_more_action" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/black_3" android:gravity="center" android:id="@id/txt_more_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="@font/san_francisco_display_semibold" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <View android:background="@color/black_f2" android:layout_width="fill_parent" android:layout_height="@dimen/size_1" app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

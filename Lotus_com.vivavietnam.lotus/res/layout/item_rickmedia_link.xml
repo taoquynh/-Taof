@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textColor="#ff1f9ffc" android:ellipsize="end" android:id="@id/tv_links" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="https://www.youtube.com/watch?v=xB..." android:singleLine="true" app:layout_constrainedWidth="true" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/iv_copy_link" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/iv_copy_link" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="72.0dip" app:layout_constraintBottom_toBottomOf="@id/tv_links" app:layout_constraintLeft_toRightOf="@id/tv_links" app:layout_constraintRight_toRightOf="@id/iv_remove_paste_link" app:layout_constraintTop_toTopOf="@id/tv_links" app:srcCompat="@drawable/ic_shape_media" />
+        <ImageView android:id="@id/iv_remove_paste_link" android:layout_width="18.0dip" android:layout_height="20.0dip" android:layout_marginRight="30.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_remove_rickmedia_paste_link" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_list_action_send_0" android:background="@drawable/bg_white_ripple_click" android:padding="@dimen/size_12" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/image_app" android:layout_width="@dimen/size_40" android:layout_height="@dimen/size_40" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@id/txt_title" android:layout_width="@dimen/size_40" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="@font/san_francisco_display_regular" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/image_app" />
+</androidx.constraintlayout.widget.ConstraintLayout>

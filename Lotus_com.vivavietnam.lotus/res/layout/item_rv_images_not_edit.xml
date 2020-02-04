@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_8" android:layout_marginBottom="@dimen/size_8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layout_image_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:id="@id/cardview_image_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shape="ring" app:cardCornerRadius="@dimen/size_16" app:cardElevation="0.0dip" app:cardPreventCornerOverlap="false">
+            <ImageView android:id="@id/image_sub_content" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+        </androidx.cardview.widget.CardView>
+        <ImageView android:id="@id/button_play" android:layout_width="@dimen/all_card_btn_play_size_48" android:layout_height="@dimen/all_card_btn_play_size_48" app:layout_constraintBottom_toBottomOf="@id/cardview_image_content" app:layout_constraintLeft_toLeftOf="@id/cardview_image_content" app:layout_constraintRight_toRightOf="@id/cardview_image_content" app:layout_constraintTop_toTopOf="@id/cardview_image_content" app:srcCompat="@drawable/ic_btn_play" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

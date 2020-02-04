@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.theartofdev.edmodo.cropper.CropImageView android:id="@id/iv_crop" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <View android:background="#b0000000" android:layout_width="0.0dip" android:layout_height="90.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
+    <ImageView android:id="@id/iv_cancel" android:padding="5.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/size_25" android:layout_marginBottom="@dimen/size_25" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:srcCompat="@drawable/ic_cancel" />
+    <ImageView android:id="@id/iv_done" android:padding="5.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="@dimen/size_25" android:layout_marginBottom="@dimen/size_25" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:srcCompat="@drawable/ic_done" />
+</androidx.constraintlayout.widget.ConstraintLayout>

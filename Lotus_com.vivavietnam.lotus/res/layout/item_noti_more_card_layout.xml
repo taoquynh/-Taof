@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_noti_more_card_layout_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_15" android:layout_marginBottom="@dimen/size_10"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/layout_avatar" android:layout_width="@dimen/size_56" android:layout_height="@dimen/size_56" app:cardCornerRadius="@dimen/size_28" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/img_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+    <TextView android:textSize="@dimen/text_size_15" android:id="@id/tv_noti_content" android:padding="@dimen/size_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/size_10" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/layout_avatar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

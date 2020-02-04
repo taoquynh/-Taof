@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/text_size_15" android:textColor="@color/black_3" android:id="@id/text_content" android:tag="layout/news_native_body_text_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/size_20" android:layout_marginRight="@dimen/size_20" android:fontFamily="@font/san_francisco_display_regular"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

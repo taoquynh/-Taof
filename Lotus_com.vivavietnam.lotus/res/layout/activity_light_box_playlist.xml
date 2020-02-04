@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:tag="layout/activity_light_box_playlist_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/view_actionbar" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/layout_height_actionbar_playlist" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layout_close" android:visibility="gone" android:layout_width="@dimen/size_42" android:layout_height="@dimen/layout_height_actionbar_playlist" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:id="@id/img_close" android:layout_width="@dimen/size_16" android:layout_height="@dimen/size_16" android:layout_marginLeft="@dimen/size_16" android:layout_marginTop="@dimen/size_12" android:tint="#ffffffff" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_close_post_repost" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layout_small_video" android:visibility="gone" android:layout_width="@dimen/size_42" android:layout_height="@dimen/layout_height_actionbar_playlist" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:id="@id/img_small" android:visibility="gone" android:layout_width="@dimen/size_16" android:layout_height="@dimen/size_16" android:layout_marginTop="@dimen/size_12" android:layout_marginRight="@dimen/size_16" android:tint="#ffffffff" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_lightbox_cast_to_tivi" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <include android:id="@id/layout_header" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/view_actionbar" layout="@layout/layout_header_playlist" />
+        <include android:id="@id/layout_player" android:background="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/layout_header" layout="@layout/layout_playlist_player" />
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/layout_player">
+            <com.google.android.material.appbar.AppBarLayout android:id="@id/appbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.constraintlayout.widget.ConstraintLayout android:tag="binding_2" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="enterAlways|scroll" app:tabMode="scrollable">
+                    <include android:id="@id/layout_bottom_playlist" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/layout_bottom_playlist" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rcv_list_video" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/size_16" android:layout_marginRight="@dimen/size_16" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

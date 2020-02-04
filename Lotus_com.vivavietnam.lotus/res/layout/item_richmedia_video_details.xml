@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:tag="layout/item_richmedia_video_details_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_image" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="@dimen/size_8" app:layout_constraintDimensionRatio="16:9" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/button_play" android:layout_width="@dimen/all_card_btn_play_size_48" android:layout_height="@dimen/all_card_btn_play_size_48" app:layout_constraintBottom_toBottomOf="@id/iv_image" app:layout_constraintLeft_toLeftOf="@id/iv_image" app:layout_constraintRight_toRightOf="@id/iv_image" app:layout_constraintTop_toTopOf="@id/iv_image" app:srcCompat="@drawable/ic_btn_play" />
+</androidx.constraintlayout.widget.ConstraintLayout>

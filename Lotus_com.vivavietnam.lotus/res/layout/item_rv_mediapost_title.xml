@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.chinalwb.are.AREditText android:textSize="20.0sp" android:textColorHint="#ff888d93" android:id="@id/edt_post_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:hint="Title, if you want one" android:fontFamily="@font/ibm_plexserif_medium" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/layout_ads_video_three_format_0" android:background="@drawable/bg_card_ads" android:paddingBottom="@dimen/size_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/size_20" android:layout_marginRight="@dimen/size_20"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/layout_ads_header" />
+    <include android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/header" layout="@layout/layout_ads_video" />
+</androidx.constraintlayout.widget.ConstraintLayout>

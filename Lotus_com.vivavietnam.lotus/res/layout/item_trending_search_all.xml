@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_trending_search_all_0" android:layout_width="fill_parent" android:layout_height="@dimen/size_72" android:layout_marginLeft="@dimen/size_16" android:layout_marginRight="@dimen/size_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/text_16161F" android:id="@id/txt_hashtash_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="\# Manchester vs Liverpool" android:singleLine="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/card_image" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.cardview.widget.CardView android:id="@id/card_image" android:layout_width="@dimen/size_80" android:layout_height="@dimen/size_46" android:layout_marginLeft="@dimen/all_card_padding_inside_16" android:layout_marginRight="@dimen/all_card_padding_inside_16" app:cardCornerRadius="@dimen/size_4" app:cardElevation="0.0dip" app:cardPreventCornerOverlap="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.6">
+        <ImageView android:id="@id/image_audio" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@null" />
+    </androidx.cardview.widget.CardView>
+    <View android:id="@id/view" android:background="@color/black_transparent_33" android:layout_width="fill_parent" android:layout_height="@dimen/size_1" app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

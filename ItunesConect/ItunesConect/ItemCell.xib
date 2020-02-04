@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ItemCell" customModule="ItunesConect" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="349" height="402"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="349" height="402"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0i-ZQ-wXr">
+                        <rect key="frame" x="0.0" y="0.0" width="349" height="402"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HN" translatesAutoresizingMaskIntoConstraints="NO" id="HWD-sV-Opd">
+                                <rect key="frame" x="4" y="4" width="341" height="268"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Yn-j6-twB">
+                                <rect key="frame" x="4" y="276" width="341" height="122"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="au9-qv-sf8">
+                                        <rect key="frame" x="4" y="8" width="333" height="106"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22g-Gz-1y8">
+                                                <rect key="frame" x="0.0" y="0.0" width="333" height="51"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yI4-Sh-JlS">
+                                                <rect key="frame" x="0.0" y="55" width="333" height="51"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.093322322279999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="au9-qv-sf8" secondAttribute="bottom" constant="8" id="16q-eP-hYG"/>
+                                    <constraint firstAttribute="trailing" secondItem="au9-qv-sf8" secondAttribute="trailing" constant="4" id="b8g-5X-AEE"/>
+                                    <constraint firstItem="au9-qv-sf8" firstAttribute="leading" secondItem="2Yn-j6-twB" secondAttribute="leading" constant="4" id="fXw-GQ-kbq"/>
+                                    <constraint firstItem="au9-qv-sf8" firstAttribute="top" secondItem="2Yn-j6-twB" secondAttribute="top" constant="8" id="iZe-jR-rys"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2Yn-j6-twB" firstAttribute="leading" secondItem="q0i-ZQ-wXr" secondAttribute="leading" constant="4" id="15N-Xv-oMx"/>
+                            <constraint firstItem="2Yn-j6-twB" firstAttribute="top" secondItem="HWD-sV-Opd" secondAttribute="bottom" constant="4" id="55L-9D-qUR"/>
+                            <constraint firstAttribute="trailing" secondItem="2Yn-j6-twB" secondAttribute="trailing" constant="4" id="5s1-dO-6q3"/>
+                            <constraint firstAttribute="bottom" secondItem="2Yn-j6-twB" secondAttribute="bottom" constant="4" id="9O5-V3-Lq8"/>
+                            <constraint firstItem="HWD-sV-Opd" firstAttribute="height" secondItem="q0i-ZQ-wXr" secondAttribute="height" multiplier="2/3" id="Y9t-bm-JD6"/>
+                            <constraint firstItem="HWD-sV-Opd" firstAttribute="leading" secondItem="q0i-ZQ-wXr" secondAttribute="leading" constant="4" id="bKG-fT-hkT"/>
+                            <constraint firstAttribute="trailing" secondItem="HWD-sV-Opd" secondAttribute="trailing" constant="4" id="dlK-JY-E64"/>
+                            <constraint firstItem="HWD-sV-Opd" firstAttribute="top" secondItem="q0i-ZQ-wXr" secondAttribute="top" constant="4" id="f2C-ii-MdF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="q0i-ZQ-wXr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="IiQ-k0-vve"/>
+                <constraint firstAttribute="trailing" secondItem="q0i-ZQ-wXr" secondAttribute="trailing" id="Xle-ni-zPg"/>
+                <constraint firstAttribute="bottom" secondItem="q0i-ZQ-wXr" secondAttribute="bottom" id="msW-Ap-Zb0"/>
+                <constraint firstItem="q0i-ZQ-wXr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vn9-mY-bCp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="349" height="402"/>
+            <connections>
+                <outlet property="artistNameLabel" destination="22g-Gz-1y8" id="jpC-1o-f2K"/>
+                <outlet property="photoImageView" destination="HWD-sV-Opd" id="zPf-Vh-pfH"/>
+                <outlet property="trackNameLabel" destination="yI4-Sh-JlS" id="0fb-HM-IVI"/>
+            </connections>
+            <point key="canvasLocation" x="368.80000000000001" y="312.14392803598201"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="HN" width="600" height="400"/>
+    </resources>
+</document>

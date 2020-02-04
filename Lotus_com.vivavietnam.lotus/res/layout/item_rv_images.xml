@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/iv_remove" android:focusable="true" android:clickable="true" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_margin="8.0dip" android:adjustViewBounds="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_waste_bin" />
+    <ImageView android:id="@id/iv_play" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_btn_play" />
+</RelativeLayout>

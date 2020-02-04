@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <VideoView android:gravity="center" android:layout_gravity="center" android:id="@id/are_video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true" />
+    <FrameLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/fullscreen_content_controls" android:background="@color/black_overlay" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?metaButtonBarStyle">
+            <Button android:id="@id/are_btn_attach_video" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/btn_attach_video" android:layout_weight="1.0" style="?metaButtonBarButtonStyle" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

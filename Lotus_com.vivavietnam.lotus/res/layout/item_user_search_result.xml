@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_user_search_result_0" android:layout_width="fill_parent" android:layout_height="@dimen/size_64" android:layout_marginLeft="@dimen/size_16" android:layout_marginStart="@dimen/size_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vccorp.base.ui.CircleImageView android:id="@id/imv_header_user_info" android:layout_width="@dimen/size_40" android:layout_height="@dimen/size_40" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" app:layout_constraintStart_toEndOf="@id/imv_header_user_info">
+        <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/text_16161F" android:id="@id/txt_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/san_francisco_display_regular" android:layout_marginStart="@dimen/size_10" app:layout_constraintBottom_toTopOf="@id/txt_online" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textColor="@color/color_1F9FFC" android:id="@id/txt_online" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/size_10" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/txt_user_name" />
+    </LinearLayout>
+    <View android:id="@id/view" android:background="@color/black_transparent_33" android:layout_width="fill_parent" android:layout_height="@dimen/size_1" app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

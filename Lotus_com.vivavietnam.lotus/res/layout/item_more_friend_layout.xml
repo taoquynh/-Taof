@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="@dimen/size_60"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/layout_avatar" android:layout_width="@dimen/size_50" android:layout_height="@dimen/size_50" app:cardCornerRadius="@dimen/size_25" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_gravity="center" android:id="@id/avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_launcher_round" android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/black" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_name" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Thom pham" android:maxLines="1" android:layout_marginStart="@dimen/size_10" android:layout_marginEnd="@dimen/size_10" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/layout_avatar" />
+    <View android:id="@id/line_actionbar_top" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="@dimen/size_0_5" android:layout_marginStart="@dimen/size_60" app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

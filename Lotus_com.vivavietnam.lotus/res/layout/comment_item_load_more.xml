@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:id="@id/comment_progress_loading" android:visibility="gone" android:layout_width="@dimen/size_30" android:layout_height="@dimen/size_30" android:layout_marginTop="@dimen/size_8" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/black_0" android:id="@id/comment_load_more" android:padding="@dimen/size_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_8" android:maxLines="1" android:fontFamily="@font/san_francisco_display_semibold" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/comment_progress_loading" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/profile_acitivity_log_footer_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_size_11" android:textColor="#ff8a8a8f" android:id="@id/tv_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/size_5" android:drawableStart="@drawable/ic_footer_emoji_grey" />
+    <View android:id="@id/line" android:background="#ffe5e5ea" android:layout_width="@dimen/size_1" android:layout_height="@dimen/size_17" android:layout_marginStart="@dimen/size_12" app:layout_constraintStart_toEndOf="@id/tv_like" />
+    <TextView android:textSize="@dimen/text_size_11" android:textColor="#ff8a8a8f" android:id="@id/tv_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/size_5" android:drawableStart="@drawable/ic_footer_comment_grey" android:layout_marginStart="@dimen/size_12" app:layout_constraintStart_toEndOf="@id/line" />
+</androidx.constraintlayout.widget.ConstraintLayout>

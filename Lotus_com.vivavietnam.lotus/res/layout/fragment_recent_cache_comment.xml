@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:tag="layout/fragment_recent_cache_comment_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/size_12"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/text_grey_8A8A8F" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/size_12" android:text="HAY DÙNG" android:fontFamily="@font/san_francisco_display_semibold" />
+        <RelativeLayout android:id="@id/rltGif" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_grey_8A8A8F" android:padding="@dimen/size_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GIF" android:layout_alignParentLeft="true" android:fontFamily="@font/san_francisco_display_semibold" />
+            <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/text_grey_1F9FFC" android:id="@id/tvMoreGif" android:padding="@dimen/size_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Xem thêm" android:layout_alignParentRight="true" android:fontFamily="@font/san_francisco_display_semibold" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rcl_gif" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/size_12" android:layout_marginRight="@dimen/size_12" />
+        <RelativeLayout android:id="@id/rltSticker" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_grey_8A8A8F" android:padding="@dimen/size_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MOTION" android:layout_alignParentLeft="true" android:fontFamily="@font/san_francisco_display_semibold" />
+            <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/text_grey_1F9FFC" android:id="@id/tvMoreSticker" android:padding="@dimen/size_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Xem thêm" android:layout_alignParentRight="true" android:fontFamily="@font/san_francisco_display_semibold" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rcl_sticker" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/size_12" android:layout_marginRight="@dimen/size_12" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

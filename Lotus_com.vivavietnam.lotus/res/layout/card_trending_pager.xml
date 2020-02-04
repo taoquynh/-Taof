@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/recycler_trending_list" android:tag="layout/card_trending_pager_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/layout_item_1" android:layout_width="0.0dip" android:layout_height="@dimen/card_trending_pager_item_height" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/card_trending_pager_item" />
+    <include android:id="@id/layout_item_2" android:layout_width="0.0dip" android:layout_height="@dimen/card_trending_pager_item_height" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/layout_item_1" layout="@layout/card_trending_pager_item" />
+    <include android:id="@id/layout_item_3" android:layout_width="0.0dip" android:layout_height="@dimen/card_trending_pager_item_height" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/layout_item_2" layout="@layout/card_trending_pager_item" />
+</androidx.constraintlayout.widget.ConstraintLayout>

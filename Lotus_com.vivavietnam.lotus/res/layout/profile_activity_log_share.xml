@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/profile_activity_log_share_0" android:background="@drawable/bg_card_ripple_click" android:padding="@dimen/size_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/size_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/layout_header" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/profile_activity_log_header" />
+    <com.vccorp.base.ui.extension.ExtensionTextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_grey_333333" android:id="@id/tv_content" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_5" android:layout_marginEnd="@dimen/size_10" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/layout_header" />
+    <include android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_8" app:layout_constraintTop_toBottomOf="@id/tv_content" layout="@layout/profile_activity_log_interact_post" />
+</androidx.constraintlayout.widget.ConstraintLayout>

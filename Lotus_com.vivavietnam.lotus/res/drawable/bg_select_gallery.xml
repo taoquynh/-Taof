@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="0.0dip" />
+    <solid android:color="@null" />
+    <stroke android:width="@dimen/size_5" android:color="@color/text_tab_selected" />
+</shape>

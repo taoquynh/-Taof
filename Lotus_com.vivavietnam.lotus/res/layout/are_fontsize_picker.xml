@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:gravity="center" android:id="@id/are_fontsize_preview" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="18sp: Preview" android:layout_weight="1.0" />
+    <SeekBar android:id="@id/are_fontsize_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="38" android:progress="6" android:layout_weight="1.0" style="@style/Widget.AppCompat.SeekBar" />
+</LinearLayout>

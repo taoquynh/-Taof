@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/activity_edit_image_item_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/size_10"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/frame_img" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" />
+        <ImageView android:layout_gravity="center" android:id="@id/img_play" android:layout_width="@dimen/size_40" android:layout_height="@dimen/size_40" android:src="@drawable/ic_btn_play" android:scaleType="centerCrop" />
+        <ImageView android:layout_gravity="end" android:id="@id/img_remove" android:layout_width="@dimen/size_24" android:layout_height="@dimen/size_24" android:layout_marginTop="@dimen/size_10" android:scaleType="fitXY" android:layout_marginEnd="@dimen/size_10" app:srcCompat="@drawable/ic_remove_image" />
+    </FrameLayout>
+    <EditText android:textSize="@dimen/text_size_15" android:textColor="@color/black_3" android:id="@id/edt_description" android:background="@color/black_f1" android:padding="@dimen/size_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/size_20" android:hint="Mô tả ảnh..." android:inputType="textCapSentences|textMultiLine" app:layout_constraintTop_toBottomOf="@id/frame_img" />
+</androidx.constraintlayout.widget.ConstraintLayout>

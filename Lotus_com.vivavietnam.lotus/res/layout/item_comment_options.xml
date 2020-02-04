@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/bg_fragment" android:layout_width="fill_parent" android:layout_height="@dimen/size_0_5" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/image_item" android:paddingTop="@dimen/size_18" android:paddingBottom="@dimen/size_18" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_share_option" />
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/gray_555555" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/size_15" android:text="Chia sẻ bình luận" android:fontFamily="@font/san_francisco_display_semibold" app:layout_constraintBottom_toBottomOf="@id/image_item" app:layout_constraintLeft_toRightOf="@id/image_item" app:layout_constraintTop_toTopOf="@id/image_item" />
+</androidx.constraintlayout.widget.ConstraintLayout>

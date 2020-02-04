@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layout_main_content" android:padding="@dimen/size_15" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+        <include android:id="@id/layout_content_header" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/comment_user_header" />
+        <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/black_0" android:id="@id/text_sub_content" android:layout_width="wrap_content" android:layout_height="33.0dip" android:layout_marginTop="@dimen/size_5" android:fontFamily="@font/san_francisco_display_regular" app:layout_constraintTop_toBottomOf="@id/layout_content_header" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layout_image_content" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/text_sub_content">
+            <ImageView android:id="@id/image_sub_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="centerCrop" />
+            <ImageView android:id="@id/button_play" android:layout_width="@dimen/all_card_btn_play_size_48" android:layout_height="@dimen/all_card_btn_play_size_48" app:layout_constraintBottom_toBottomOf="@id/image_sub_content" app:layout_constraintLeft_toLeftOf="@id/image_sub_content" app:layout_constraintRight_toRightOf="@id/image_sub_content" app:layout_constraintTop_toTopOf="@id/image_sub_content" app:srcCompat="@drawable/ic_btn_play" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <include android:id="@id/layout_optional" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/layout_image_content" layout="@layout/comment_optional_function" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rcl_list_children" android:background="@drawable/bg_book_desc_stroke" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/size_8" app:layout_constraintTop_toBottomOf="@id/layout_optional" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

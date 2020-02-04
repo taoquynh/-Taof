@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/activity_add_photo_item_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_30"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_add_image" android:background="@drawable/bg_add_more_photo_border" android:paddingTop="@dimen/size_10" android:paddingBottom="@dimen/size_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/size_40" android:paddingEnd="@dimen/size_40" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <ImageView android:layout_width="@dimen/size_30" android:layout_height="@dimen/size_30" app:srcCompat="@drawable/ic_camera" />
+        <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_more_photo" android:fontFamily="@font/san_francisco_display_semibold" android:layout_marginStart="@dimen/size_10" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" android:installLocation="internalOnly" package="com.vivavietnam.lotus" platformBuildVersionCode="32" platformBuildVersionName="4.3">
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.hardware.camera"/>
+    <uses-permission android:name="android.hardware.camera.autofocus"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.PORTRAIT" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera2" android:required="false"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET"/>
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission-sdk-23 android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.vivavietnam.lotus.view.KinhHubApplication" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme.NoActionBar" android:usesCleartextTraffic="true">
+        <activity android:name="com.vivavietnam.lotus.view.activity.profile.PolicyUserNameActivity" android:noHistory="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.vivavietnam.lotus.view.activity.profile.CropImageActivity"/>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.profile.VerifyUserNameActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.vivavietnam.lotus.view.activity.newPosts.FolderListActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.vivavietnam.lotus.view.activity.token.TokenHistoryActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.detail.DetailsLightBoxEntertainmentActivity" android:theme="@style/AppTheme.NoActionBar.FullScreen"/>
+        <activity android:name="com.vivavietnam.lotus.view.activity.profile.TokenManagerActivity"/>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.profile.ProfileManagerActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.vivavietnam.lotus.view.activity.profile.ProfileSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.vivavietnam.lotus.view.activity.detail.DetailsRichmediaActivity"/>
+        <activity android:name="com.vivavietnam.lotus.view.activity.newPosts.DesignIdeaPreview"/>
+        <activity android:name="com.vivavietnam.lotus.view.activity.VerifyKYCActivity"/>
+        <activity android:name="com.vivavietnam.lotus.view.activity.mediapost.AddLinkActivity"/>
+        <activity android:name="com.vivavietnam.lotus.view.activity.mediapost.taguser.TagUserActivity"/>
+        <activity android:name="com.vivavietnam.lotus.view.activity.newPosts.DesignIdeaActivity"/>
+        <activity android:name="com.vivavietnam.lotus.view.activity.newPosts.DesignIdea2Activity"/>
+        <activity android:name="com.vivavietnam.lotus.view.activity.newPosts.InputPhotoStoryActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.vivavietnam.lotus.view.activity.MainActivty" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing">
+            <meta-data android:name="android.service.chooser.chooser_target_service" android:value="vn.viva.messenger.TgChooserTargetService"/>
+        </activity>
+        <provider android:authorities="@string/provider_camera" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.SplashScreenActivity" android:screenOrientation="portrait" android:theme="@style/SplashTheme1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="com.vivavietnam.lotus"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.detail.FrameActivity"/>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.detail.NewsDetailsActivity"/>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.detail.NormalActivity"/>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.PostActivity" android:theme="@style/AppTheme.PostActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.detail.DetailsSingleImageActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.comment.CommentShowImageActivity" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.detail.DetailsMultiImageActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.comment.CommentActivity" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.richcomment.RichCommentActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.comment.CommentMediaActivity" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:configChanges="keyboardHidden" android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.newPosts.CreatePostActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.newPosts.CustomGalleryCreatePostActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.CustomGalleryActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.comment.TestPlayerActivity" android:theme="@style/AppTheme.NoActionBar.FullScreen"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.detail.LightBoxPlaylistActivity" android:theme="@style/AppTheme.NoActionBar.FullScreen"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.detail.LightBoxActivityDemo" android:theme="@style/AppTheme.NoActionBar.FullScreen"/>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.detail.PlaylistDetailsPopupActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.PopupDetails"/>
+        <service android:enabled="true" android:exported="false" android:name="com.vccorp.video.background.PlayerService"/>
+        <service android:enabled="true" android:name="com.vivavietnam.lotus.service.TrackingService"/>
+        <receiver android:enabled="true" android:name="com.vivavietnam.lotus.util.ConnectivityReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.vivavietnam.lotus.view.activity.DemoCommentActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.detail.SingleVideoActivity" android:theme="@style/AppTheme.NoActionBar.FullScreen"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.comment.CommentPlayVideoActivity" android:theme="@style/AppTheme.NoActionBar.FullScreen"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.detail.DetailsAndCommentActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.detail.DetailsFrameActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.detail.DetailsJournalAlbumEntertainmentActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.detail.DetailsGalleryEntertainmentActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.newPosts.TagFriendActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.newPosts.EditPhotoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.newPosts.ShareLinkActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.InvitationCodeActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.SearchActivity" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:name="com.vivavietnam.lotus.view.activity.profile.ProfileActivity"/>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.search.SearchActivity" android:theme="@style/AppTheme.NoActionBar.SearchActivity" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.search.ResultSearchActivity" android:theme="@style/AppTheme.NoActionBar.SearchActivity" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.search.TwoResultSearchActivity" android:theme="@style/AppTheme.NoActionBar.SearchActivity"/>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.profile.DetailsProfileActivty" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.comment.GifAndStickerComment.RecentCommentAllActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Transparent" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.comment.GifAndStickerComment.SettingStickerActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Transparent" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.detail.DetailWidgetActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.ScanQRActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.profile.UserAvatarHistoryActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.search.AllTrendingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.search.MoreSearchActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.detail.ManageFolderActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Transparent"/>
+        <service android:exported="false" android:name="com.vivavietnam.lotus.service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/ic_launcher_round"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/colorAccent"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value="@string/default_notification_channel_id"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.mediapost.MediaPostActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.vivavietnam.lotus.view.activity.mediapost.pickgallery.PickGalleryActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.detail.DetailsImageActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.detail.DetailsWelcomeActivity" android:theme="@style/AppTheme.NoActionBar.FullScreen"/>
+        <activity android:launchMode="singleTop" android:name="com.vivavietnam.lotus.view.activity.detail.DetailTrendingItemActivity"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="fe23c975bdd0a3caceca0bd14b218fe79e5d33e3"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.vcc.kingidsdk.KingIdAuthenActivity" android:theme="@style/AppTheme"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_are__video_player" android:name="com.chinalwb.are.activities.Are_VideoPlayerActivity" android:theme="@style/FullscreenTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.chinalwb.are.activities.Are_AtPickerActivity" android:theme="@style/AppTheme"/>
+        <activity android:name="com.chinalwb.are.strategies.defaults.DefaultProfileActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_default_image_preview" android:name="com.chinalwb.are.strategies.defaults.DefaultImagePreviewActivity" android:theme="@style/FullscreenTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:hardwareAccelerated="@bool/useHardwareAcceleration" android:launchMode="singleTask" android:name="vn.viva.ui.LaunchActivity" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.item/vnd.vn.viva.messenger.android.profile"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="telegram.me" android:scheme="http"/>
+                <data android:host="telegram.me" android:scheme="https"/>
+                <data android:host="telegram.dog" android:scheme="http"/>
+                <data android:host="telegram.dog" android:scheme="https"/>
+                <data android:host="telesco.pe" android:scheme="http"/>
+                <data android:host="telesco.pe" android:scheme="https"/>
+                <data android:host="t.me" android:scheme="http"/>
+                <data android:host="t.me" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:icon="@drawable/ic_launcher" android:priority="1">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="tg"/>
+            </intent-filter>
+            <meta-data android:name="android.service.chooser.chooser_target_service" android:value="vn.viva.messenger.TgChooserTargetService"/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:hardwareAccelerated="@bool/useHardwareAcceleration" android:name="vn.viva.ui.ShareActivity" android:stateNotNeeded="true" android:theme="@style/Theme.TMessages.Transparent" android:windowSoftInputMode="adjustPan">
+            <intent-filter android:icon="@drawable/ic_launcher" android:priority="1">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="tgb"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="true" android:name="vn.viva.messenger.OpenChatReceiver"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:excludeFromRecents="true" android:launchMode="singleTask" android:name="vn.viva.ui.PopupNotificationActivity" android:resizeableActivity="false" android:taskAffinity="" android:theme="@style/Theme.TMessages.PopupNotification" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <receiver android:exported="false" android:name="vn.viva.messenger.AutoMessageHeardReceiver">
+            <intent-filter>
+                <action android:name="vn.viva.messenger.ACTION_MESSAGE_HEARD"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="vn.viva.messenger.AutoMessageReplyReceiver">
+            <intent-filter>
+                <action android:name="vn.viva.messenger.ACTION_MESSAGE_REPLY"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="vn.viva.messenger.CallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="vn.viva.messenger.AuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/auth"/>
+        </service>
+        <service android:exported="true" android:name="vn.viva.messenger.ContactsSyncAdapterService">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/sync_contacts"/>
+            <meta-data android:name="android.provider.CONTACTS_STRUCTURE" android:resource="@xml/contacts"/>
+        </service>
+        <service android:label="@string/AppName" android:name="vn.viva.messenger.TgChooserTargetService" android:permission="android.permission.BIND_CHOOSER_TARGET_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.chooser.ChooserTargetService"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:name="vn.viva.messenger.BringAppForegroundService"/>
+        <service android:enabled="true" android:name="vn.viva.messenger.NotificationsService"/>
+        <service android:exported="false" android:name="vn.viva.messenger.NotificationRepeat"/>
+        <service android:exported="false" android:name="vn.viva.messenger.ClearCacheService"/>
+        <service android:enabled="true" android:name="vn.viva.messenger.VideoEncodingService"/>
+        <service android:enabled="true" android:exported="true" android:name="vn.viva.messenger.MusicPlayerService"/>
+        <receiver android:name="vn.viva.messenger.MusicPlayerReceiver">
+            <intent-filter>
+                <action android:name="vn.viva.android.musicplayer.close"/>
+                <action android:name="vn.viva.android.musicplayer.pause"/>
+                <action android:name="vn.viva.android.musicplayer.next"/>
+                <action android:name="vn.viva.android.musicplayer.play"/>
+                <action android:name="vn.viva.android.musicplayer.previous"/>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+                <action android:name="android.media.AUDIO_BECOMING_NOISY"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="vn.viva.messenger.AppStartReceiver">
+            <intent-filter>
+                <action android:name="vn.viva.start"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="vn.viva.messenger.RefererReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="vn.viva.messenger.WearReplyReceiver"/>
+        <receiver android:enabled="true" android:name="vn.viva.messenger.StopLiveLocationReceiver"/>
+        <receiver android:enabled="true" android:name="vn.viva.messenger.PopupReplyReceiver"/>
+        <receiver android:enabled="true" android:name="vn.viva.messenger.ShareBroadcastReceiver"/>
+        <receiver android:enabled="true" android:name="vn.viva.messenger.CustomTabsCopyReceiver"/>
+        <receiver android:exported="false" android:name="vn.viva.messenger.NotificationDismissReceiver"/>
+        <uses-library android:name="com.sec.android.app.multiwindow" android:required="false"/>
+        <meta-data android:name="com.sec.android.support.multiwindow" android:value="true"/>
+        <meta-data android:name="com.sec.android.multiwindow.DEFAULT_SIZE_W" android:value="632dp"/>
+        <meta-data android:name="com.sec.android.multiwindow.DEFAULT_SIZE_H" android:value="598dp"/>
+        <meta-data android:name="com.sec.android.multiwindow.MINIMUM_SIZE_W" android:value="632dp"/>
+        <meta-data android:name="com.sec.android.multiwindow.MINIMUM_SIZE_H" android:value="598dp"/>
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="face"/>
+        <meta-data android:name="com.samsung.android.icon_container.has_icon_container" android:value="true"/>
+        <meta-data android:name="android.max_aspect" android:value="2.5"/>
+        <service android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.vivavietnam.lotus.crashlyticsinitprovider" android:exported="false" android:initOrder="90" android:name="com.crashlytics.android.CrashlyticsInitProvider"/>
+        <service android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <provider android:authorities="com.vivavietnam.lotus.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <provider android:authorities="com.vivavietnam.lotus.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.facebook.CampaignTrackingReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.vivavietnam.lotus.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <service android:exported="true" android:name="com.vcc.playercores.scheduler.PlatformScheduler$PlatformSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME" android:value="com.vcc.playercores.ext.cast.DefaultCastOptionsProvider"/>
+        <service android:exported="true" android:name="com.firebase.jobdispatcher.GooglePlayReceiver" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <activity android:name="net.hockeyapp.android.UpdateActivity"/>
+        <activity android:name="net.hockeyapp.android.FeedbackActivity" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:name="net.hockeyapp.android.PaintActivity"/>
+        <activity android:name="net.hockeyapp.android.LoginActivity"/>
+        <activity android:name="net.hockeyapp.android.ExpiryInfoActivity"/>
+        <service android:exported="false" android:name="com.vcc.shloggingsdk.openudid.OpenUDID_service">
+            <intent-filter>
+                <action android:name="org.OpenUDID.GETUDID"/>
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_history_token_pager_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/size_12" android:layout_marginEnd="@dimen/size_12"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.tabs.TabLayout android:id="@id/tab_layout" android:layout_width="fill_parent" android:layout_height="@dimen/size_40" app:layout_constraintTop_toTopOf="parent" />
+    <com.vccorp.feed.util.WrapContentViewPager android:id="@id/item_viewpager" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintTop_toBottomOf="@id/tab_layout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

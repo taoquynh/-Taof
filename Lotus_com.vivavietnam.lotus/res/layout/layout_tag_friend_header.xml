@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/layout_tag_friend_header_0" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vivavietnam.lotus.util.RippleView android:id="@id/bt_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/staus_bar_color" android:padding="@dimen/magrin_text_cancel_creatpost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_cancel_creatpost" android:fontFamily="@font/san_francisco_display_bold" />
+    </com.vivavietnam.lotus.util.RippleView>
+    <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/black" android:id="@id/tv_title_tag_friend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_14" android:text="@string/text_title_tag_friend" android:fontFamily="@font/san_francisco_display_bold" app:layout_constraintLeft_toRightOf="@id/bt_cancel" app:layout_constraintRight_toLeftOf="@id/bt_done" app:layout_constraintTop_toTopOf="parent" />
+    <com.vivavietnam.lotus.util.RippleView android:id="@id/bt_done" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="@dimen/text_size_17" android:id="@id/tv_title_bt_done" android:tag="binding_1" android:padding="@dimen/magrin_text_cancel_creatpost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_post_tag_friend_done" android:fontFamily="@font/san_francisco_display_bold" />
+    </com.vivavietnam.lotus.util.RippleView>
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline_top" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="@dimen/layout_height_actionbar_create_post" />
+    <View android:id="@id/line_actionbar_top" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0dip" app:layout_constraintTop_toBottomOf="@id/guideline_top" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_search_0" android:background="@drawable/bg_all_ripple_click" android:layout_width="fill_parent" android:layout_height="@dimen/size_64"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/card_image" android:layout_width="@dimen/size_40" android:layout_height="@dimen/size_40" android:layout_marginLeft="@dimen/size_16" app:cardCornerRadius="@dimen/size_20" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/img_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+    <TextView android:textSize="@dimen/text_size_17" android:textColor="#ff000000" android:id="@id/tv_name" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/size_16" android:singleLine="true" android:fontFamily="@font/san_francisco_display_semibold" app:layout_constraintLeft_toRightOf="@id/card_image" app:layout_constraintTop_toTopOf="@id/card_image" />
+    <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/text_clor_offline" android:id="@id/tv_status" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/size_15" android:singleLine="true" android:fontFamily="@font/san_francisco_display_medium" app:layout_constraintBottom_toBottomOf="@id/card_image" app:layout_constraintLeft_toRightOf="@id/card_image" />
+    <View android:background="#80e8e9ee" android:layout_width="0.0dip" android:layout_height="1.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/card_image" app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

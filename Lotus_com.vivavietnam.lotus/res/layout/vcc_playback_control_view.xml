@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/bg_control_gradient" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/vccplayer_prev" style="@style/ExoMediaButton.Previous" />
+        <ImageView android:id="@id/vccplayer_rew" style="@style/ExoMediaButton.Rewind" />
+        <ImageView android:id="@id/vccplayer_shuffle" style="@style/ExoMediaButton.Shuffle" />
+        <ImageView android:id="@id/vccplayer_repeat_toggle" style="@style/ExoMediaButton.Repeat" />
+        <ImageView android:id="@id/vccplayer_play" style="@style/ExoMediaButton.Play" />
+        <ImageView android:id="@id/vccplayer_pause" style="@style/ExoMediaButton.Pause" />
+        <ImageView android:id="@id/vccplayer_ffwd" style="@style/ExoMediaButton.FastForward" />
+        <ImageView android:id="@id/vccplayer_next" style="@style/ExoMediaButton.Next" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffe0e0e0" android:id="@id/vccplayer_position" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <com.vcc.playercores.ui.DefaultTimeBar android:id="@id/vccplayer_progress" android:layout_width="0.0dip" android:layout_height="26.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffe0e0e0" android:id="@id/vccplayer_duration" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <ImageView android:id="@id/vccplayer_fullscreen" style="@style/ExoMediaButton.Fullscreen" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/activity_detail_widget_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/image_back" android:paddingLeft="@dimen/size_14" android:paddingRight="@dimen/size_14" android:layout_width="wrap_content" android:layout_height="@dimen/height_actionbar" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_news_back" />
+        <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/black" android:gravity="center" android:id="@id/txt_category_name" android:layout_width="wrap_content" android:layout_height="@dimen/height_actionbar" android:fontFamily="@font/san_francisco_display_semibold" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/image_category_follow" android:tag="binding_1" android:padding="@dimen/size_5" android:layout_width="@dimen/height_actionbar" android:layout_height="@dimen/height_actionbar" android:scaleType="center" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include android:id="@id/common_header_user" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/size_12" app:layout_constraintTop_toBottomOf="@id/header" layout="@layout/common_hearder_user_widget" />
+    <View android:id="@id/view_one" android:background="@color/line_detail_actionbar" android:layout_width="fill_parent" android:layout_height="@dimen/size_1" app:layout_constraintTop_toBottomOf="@id/common_header_user" />
+    <WebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="0.0dip" android:overScrollMode="never" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/view_one" />
+    <include android:id="@id/common_error" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/layout_common_progress" />
+</androidx.constraintlayout.widget.ConstraintLayout>

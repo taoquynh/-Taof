@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:tag="layout/card_loadmore_0" android:paddingBottom="@dimen/size_12" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:id="@id/progress_loadmore" android:layout_width="@dimen/size_25" android:layout_height="@dimen/size_25" android:layout_marginLeft="@dimen/size_15" />
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/black_6" android:id="@id/tv_loadmore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/loadmore" android:includeFontPadding="false" android:fontFamily="@font/san_francisco_display_semibold" />
+</LinearLayout>

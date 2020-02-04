@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content_main" android:tag="layout/dialog_recent_sticker_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/btnscroll" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+        <ImageView android:id="@id/btn_back" android:paddingLeft="@dimen/size_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_close_black" />
+        <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/black_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hay dùng" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:fontFamily="@font/san_francisco_display_semibold" />
+    </RelativeLayout>
+    <View android:background="@color/all_card_underline_color" android:layout_width="fill_parent" android:layout_height="2.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/gray_8A8A8F" android:gravity="center" android:id="@id/tv_gif" android:background="?selectableItemBackground" android:padding="@dimen/size_14" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="GIF" android:layout_weight="1.0" android:fontFamily="@font/san_francisco_display_semibold" />
+        <View android:background="@color/all_card_underline_color" android:layout_width="2.0px" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/gray_8A8A8F" android:gravity="center" android:id="@id/tv_sticker" android:background="?selectableItemBackground" android:padding="@dimen/size_14" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Sticker" android:layout_weight="1.0" android:fontFamily="@font/san_francisco_display_semibold" />
+    </LinearLayout>
+    <View android:background="@color/black_ee" android:layout_width="fill_parent" android:layout_height="@dimen/size_10" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rcl_gif" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rcl_sticker" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

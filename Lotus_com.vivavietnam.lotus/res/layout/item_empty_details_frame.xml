@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:tag="layout/item_empty_details_frame_0" android:layout_width="fill_parent" android:layout_height="@dimen/size_200"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

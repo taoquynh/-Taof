@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/view_root" android:tag="layout/card_video_ads_0" android:background="@drawable/bg_card_ripple_click" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/all_card_margin_12" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/layout_common_ads_header" />
+    <include android:id="@id/video_ads" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/header" layout="@layout/layout_ads_video" />
+    <include android:id="@id/image_ads" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/header" layout="@layout/layout_feed_ads_image" />
+    <androidx.constraintlayout.widget.Barrier android:id="@id/barrier" android:layout_width="0.0dip" android:layout_height="0.0dip" app:barrierDirection="bottom" app:constraint_referenced_ids="video_ads, image_ads" app:layout_constraintTop_toBottomOf="@id/header" />
+    <include android:id="@id/reactition" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/barrier" layout="@layout/common_footer_reactition" />
+    <View android:id="@id/v_line_under_footer_reactition" android:background="@color/all_card_underline_color" android:layout_width="0.0dip" android:layout_height="@dimen/size_0_5" android:layout_marginLeft="@dimen/all_card_padding_inside_16" android:layout_marginRight="@dimen/all_card_padding_inside_16" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/reactition" />
+    <include android:id="@id/interactive" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/v_line_under_footer_reactition" layout="@layout/common_footer_interactive" />
+</androidx.constraintlayout.widget.ConstraintLayout>

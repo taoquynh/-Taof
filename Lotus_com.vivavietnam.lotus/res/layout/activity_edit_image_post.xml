@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/activity_edit_image_post_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/header_bar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.vivavietnam.lotus.util.RippleView android:id="@id/bt_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/staus_bar_color" android:padding="@dimen/magrin_text_cancel_creatpost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_cancel_creatpost" android:fontFamily="@font/san_francisco_display_bold" />
+        </com.vivavietnam.lotus.util.RippleView>
+        <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/black" android:id="@id/tv_title_creatpost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_14" android:text="@string/text_title_edit_image_creatpost" android:fontFamily="@font/san_francisco_display_bold" app:layout_constraintLeft_toRightOf="parent" app:layout_constraintRight_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.vivavietnam.lotus.util.RippleView android:id="@id/bt_done" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/staus_bar_color" android:id="@id/tv_title_bt_posts" android:padding="@dimen/magrin_text_cancel_creatpost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_done_edit_image" android:fontFamily="@font/san_francisco_display_bold" />
+        </com.vivavietnam.lotus.util.RippleView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rcv_image" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="parent" app:layout_constraintRight_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/header_bar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

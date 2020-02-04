@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/header" android:tag="layout/common_header_activity_0" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/image_back" android:paddingLeft="@dimen/size_14" android:paddingRight="@dimen/size_14" android:layout_width="wrap_content" android:layout_height="@dimen/height_actionbar" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_news_back" />
+    <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/black" android:gravity="center" android:id="@id/txt_category_name" android:layout_width="wrap_content" android:layout_height="@dimen/height_actionbar" android:fontFamily="@font/san_francisco_display_semibold" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

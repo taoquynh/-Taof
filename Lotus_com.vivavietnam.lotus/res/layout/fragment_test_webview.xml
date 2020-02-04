@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_test_webview_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager.widget.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/tabDots" />
+    <com.google.android.material.tabs.TabLayout android:id="@id/tabDots" android:background="#b2000000" android:layout_width="fill_parent" android:layout_height="@dimen/size_26" android:layout_alignParentBottom="true" app:layout_constraintEnd_toStartOf="@id/button_comment" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:tabBackground="@drawable/tab_selector_webview" app:tabGravity="center" app:tabIndicatorHeight="0.0dip" app:tabMode="fixed" />
+    <ImageButton android:id="@id/button_close" android:background="@drawable/bg_transparent_button" android:padding="@dimen/size_10" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/size_26" android:scaleType="center" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_close" />
+</androidx.constraintlayout.widget.ConstraintLayout>

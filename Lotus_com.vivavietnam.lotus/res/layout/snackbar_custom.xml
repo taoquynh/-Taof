@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/image_save" android:layout_width="@dimen/size_25" android:layout_height="@dimen/size_25" android:layout_marginStart="@dimen/size_21" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_repost_new" />
+    <TextView android:textColor="@color/white" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/all_card_margin_12" android:text="@string/reposted" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/image_save" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textColor="@color/white" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/st_view_all_item" android:textAllCaps="true" android:layout_marginEnd="@dimen/size_16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
